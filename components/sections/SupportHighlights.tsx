@@ -1,4 +1,5 @@
 import { SectionHeading } from "@/components/shared/SectionHeading";
+import { FadeIn } from "@/components/shared/FadeIn";
 
 const highlights = [
   {
@@ -21,26 +22,31 @@ const highlights = [
 
 export function SupportHighlights() {
   return (
-    <section id="atendimento" className="mx-auto max-w-6xl px-6 py-24">
-      <SectionHeading
-        eyebrow="Atendimento"
-        title="Um atendimento diferenciado, do primeiro contato ao suporte continuo"
-      />
-
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {highlights.map((item) => (
-          <div
-            key={item.title}
-            className="rounded-card border border-border p-8"
-          >
-            <h3 className="text-base font-medium text-foreground">
-              {item.title}
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-foreground-subtle">
-              {item.description}
-            </p>
-          </div>
-        ))}
+    <section
+      id="atendimento"
+      className="relative bg-gradient-to-b from-transparent via-surface-1/30 to-transparent px-6 py-24"
+    >
+      <div className="mx-auto max-w-6xl">
+        <FadeIn>
+          <SectionHeading
+            eyebrow="Atendimento"
+            title="Um atendimento diferenciado, do primeiro contato ao suporte continuo"
+          />
+        </FadeIn>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {highlights.map((item, index) => (
+            <FadeIn key={item.title} delay={index * 0.08}>
+              <div className="rounded-card border border-border p-8">
+                <h3 className="text-base font-medium text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-foreground-subtle">
+                  {item.description}
+                </p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
       </div>
     </section>
   );

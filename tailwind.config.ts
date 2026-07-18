@@ -9,23 +9,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0a",
+        background: "#0d1216",
         surface: {
-          1: "#1a1a1a",
-          2: "#2a2a2a",
+          1: "#151b20",
+          2: "#212a30",
         },
         foreground: {
           DEFAULT: "#ffffff",
-          muted: "#a0a0a0",
-          subtle: "#8a8a8a",
+          muted: "#b8c2c9",
+          subtle: "#8fa0a8",
         },
         border: {
-          DEFAULT: "#2a2a2a",
+          DEFAULT: "#2a3840",
+          strong: "#3a4a54",
         },
-        // TODO: accent color ainda em aberto (avaliar azul-acinzentado
-        // ou outra opcao alem do verde do whatsapp)
         accent: {
-          DEFAULT: "#4b7bab",
+          DEFAULT: "#d4a24e",
+          muted: "#8a6d3a",
+        },
+        petrol: {
+          DEFAULT: "#0f2b38",
+          light: "#1c4356",
         },
         whatsapp: {
           DEFAULT: "#25D366",
