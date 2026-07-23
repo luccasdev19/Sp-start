@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AnimatedBackground } from "@/components/shared/AnimatedBackground";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="bg-background font-sans text-foreground antialiased">
+        <AnimatedBackground />
         <Header />
         <main>{children}</main>
         <Footer />
