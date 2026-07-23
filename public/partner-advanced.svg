@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="180" viewBox="0 0 620 180">
+  <defs>
+    <style>
+      .word {
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="620" height="180" rx="20" fill="#071B35"></rect>
+
+  <!-- Ícone -->
+  <g transform="translate(48 35)">
+    <!-- Parte branca -->
+    <polygon points="45,0 90,110 68,110 53,75 38,110 16,110" fill="#ffffff"></polygon>
+
+    <!-- Parte vermelha -->
+    <polygon points="45,0 74,0 120,110 92,110" fill="#ff5a4f"></polygon>
+
+    <!-- Corte interno -->
+    <polygon points="53,46 66,74 40,74" fill="#071B35"></polygon>
+  </g>
+
+  <!-- Texto -->
+  <text x="185" y="102" class="word" font-size="58">
+    Advanced
+  </text>
+
+  <!-- ® -->
+  <text x="515" y="64" font-family="Arial" font-size="16" fill="#ffffff">
+    ®
+  </text>
+</svg>

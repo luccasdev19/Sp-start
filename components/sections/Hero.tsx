@@ -1,25 +1,7 @@
 import Image from "next/image";
-import { Clock, Users, ShieldCheck } from "lucide-react";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { whatsappMessages } from "@/lib/whatsapp";
-
-const stats = [
-  {
-    icon: Clock,
-    value: "5min",
-    label: "Tempo de resposta",
-  },
-  {
-    icon: Users,
-    value: "+5.000",
-    label: "Atendimentos realizados",
-  },
-  {
-    icon: ShieldCheck,
-    value: "24/7",
-    label: "Monitoramento",
-  },
-];
+import { stats } from "@/lib/constants";
 
 export function Hero() {
   return (

@@ -17,12 +17,12 @@ export function ServicesPreview() {
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {services.map((service, index) => (
-          <FadeIn key={service.id} delay={index * 0.1}>
+          <FadeIn key={service.id} delay={index * 0.1} className="h-full">
             <Link
               href={service.href}
-              className="group block overflow-hidden rounded-card border border-border bg-surface-1 transition-colors hover:border-foreground-subtle"
+              className="group flex h-full flex-col overflow-hidden rounded-card border border-border bg-surface-1 transition-colors hover:border-foreground-subtle"
             >
-              <div className="relative h-40 w-full">
+              <div className="relative aspect-video w-full">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -31,11 +31,11 @@ export function ServicesPreview() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-1 to-transparent" />
               </div>
-              <div className="p-8 pt-6">
+              <div className="flex flex-1 flex-col p-8 pt-6">
                 <h3 className="text-lg font-medium text-foreground">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-foreground-subtle">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground-subtle">
                   {service.description}
                 </p>
                 <span className="mt-6 inline-flex items-center gap-1 text-sm text-accent">

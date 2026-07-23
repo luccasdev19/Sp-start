@@ -25,8 +25,8 @@ export function MissionVisionValues() {
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           {items.map((item, index) => (
-            <FadeIn key={item.title} delay={index * 0.1}>
-              <div className="overflow-hidden rounded-card border border-border bg-surface-1">
+            <FadeIn key={item.title} delay={index * 0.1} className="h-full">
+              <div className="flex h-full flex-col overflow-hidden rounded-card border border-border bg-surface-1">
                 <div className="relative h-40 w-full">
                   <Image
                     src={item.image}
@@ -36,11 +36,11 @@ export function MissionVisionValues() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-surface-1 to-transparent" />
                 </div>
-                <div className="p-8 pt-6">
+                <div className="flex flex-1 flex-col p-8 pt-6">
                   <h3 className="text-lg font-medium text-foreground">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-foreground-subtle">
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground-subtle">
                     {item.description}
                   </p>
                 </div>

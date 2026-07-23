@@ -41,6 +41,15 @@ const config: Config = {
       borderRadius: {
         card: "12px",
       },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 28s linear infinite",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

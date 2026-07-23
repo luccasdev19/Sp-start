@@ -1,24 +1,7 @@
+import Image from "next/image";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { FadeIn } from "@/components/shared/FadeIn";
-
-const highlights = [
-  {
-    title: "Sistema de chamados",
-    description: "Placeholder: descricao do sistema de abertura e acompanhamento de chamados.",
-  },
-  {
-    title: "Atendimento humanizado",
-    description: "Placeholder: descricao do diferencial no atendimento ao cliente.",
-  },
-  {
-    title: "Prevencao de falhas",
-    description: "Placeholder: descricao da abordagem preventiva de monitoramento.",
-  },
-  {
-    title: "Gestao inteligente",
-    description: "Placeholder: descricao da gestao centralizada da infraestrutura.",
-  },
-];
+import { highlights } from "@/lib/constants";
 
 export function SupportHighlights() {
   return (
@@ -35,14 +18,25 @@ export function SupportHighlights() {
         </FadeIn>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {highlights.map((item, index) => (
-            <FadeIn key={item.title} delay={index * 0.08}>
-              <div className="rounded-card border border-border p-8">
-                <h3 className="text-base font-medium text-foreground">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-foreground-subtle">
-                  {item.description}
-                </p>
+            <FadeIn key={item.id} delay={index * 0.08} className="h-full">
+              <div className="flex h-full flex-col overflow-hidden rounded-card border border-border bg-surface-1">
+                <div className="relative aspect-video w-full">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface-1 to-transparent" />
+                </div>
+                <div className="flex flex-1 flex-col p-8 pt-6">
+                  <h3 className="text-base font-medium text-foreground">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground-subtle">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </FadeIn>
           ))}
