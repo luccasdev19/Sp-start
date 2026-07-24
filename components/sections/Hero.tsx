@@ -37,7 +37,7 @@ export function Hero() {
               className="flex aspect-square flex-col items-center justify-center gap-3 rounded-card border border-border bg-surface-1/70 p-6 backdrop-blur-sm"
             >
               <stat.icon size={24} className="text-accent" aria-hidden="true" />
-              <span className="text-2xl font-semibold text-foreground sm:text-3xl">
+              <span className="text-2xl font-medium text-foreground sm:text-3xl">
                 {stat.value}
               </span>
               <span className="text-center text-sm text-foreground-subtle">

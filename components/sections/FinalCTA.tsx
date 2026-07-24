@@ -1,12 +1,19 @@
+import Image from "next/image";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { whatsappMessages } from "@/lib/whatsapp";
 import { FadeIn } from "@/components/shared/FadeIn";
-
 export function FinalCTA() {
   return (
-    <section className="relative bg-gradient-to-b from-transparent via-petrol/20 to-background px-6 py-24">
-      <FadeIn>
-        <div className="mx-auto max-w-4xl text-center">
+    <section className="relative flex min-h-[720px] items-center overflow-hidden px-6 py-24">
+      <Image
+        src="/cta-bg.jpg"
+        alt=""
+        fill
+        className="object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-background/80" />
+      <FadeIn className="w-full">
+        <div className="relative z-10 mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-medium text-foreground sm:text-4xl">
             Fale com um especialista
           </h2>
