@@ -29,7 +29,6 @@ export function SupportHighlights() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-surface-1 to-transparent" />
                 </div>
                 <div className="flex flex-1 flex-col p-8 pt-6">
                   <h3 className="text-base font-medium text-foreground">

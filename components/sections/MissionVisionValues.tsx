@@ -43,7 +43,6 @@ export function MissionVisionValues() {
                     fill
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-125"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-surface-1 to-transparent" />
                 </div>
                 <div className="flex flex-1 flex-col p-8 pt-6">
                   <h3 className="text-lg font-medium text-foreground transition-colors duration-300 group-hover:text-accent">
