@@ -11,7 +11,7 @@ export const services: Service[] = [
     id: "gestao-de-ti",
     title: "Gestao de T.I",
     description: "Mais controle, menos problemas, melhores resultados.",
-    href: "/servicos/gestao-de-ti",
+    href: "/servicos",
     image: "/gestao-de-ti.jpg",
   },
   {
