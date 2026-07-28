@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { FadeIn } from "@/components/shared/FadeIn";
-import { RingAccent } from "@/components/shared/RingAccent";
+import { AccentBeam } from "@/components/shared/AccentBeam";
 import { highlights } from "@/lib/constants";
+
 export function SupportHighlights() {
   return (
     <section
       id="atendimento"
-      className="relative overflow-hidden bg-gradient-to-b from-transparent via-surface-1/30 to-transparent px-6 py-24"
+      className="relative overflow-hidden bg-[radial-gradient(circle_at_70%_80%,_#171e24_0%,_#0d1216_70%)] px-6 py-24"
     >
-      <RingAccent className="-right-64 -top-64" />
+      <AccentBeam />
       <div className="relative z-10 mx-auto max-w-6xl">
         <FadeIn>
           <SectionHeading

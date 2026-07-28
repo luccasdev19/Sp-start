@@ -2,9 +2,10 @@ import Image from "next/image";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { whatsappMessages } from "@/lib/whatsapp";
 import { FadeIn } from "@/components/shared/FadeIn";
+import { Button } from "@/components/ui/button";
 export function FinalCTA() {
   return (
-    <section className="relative flex min-h-[720px] items-center overflow-hidden px-6 py-24">
+    <section id="contato" className="relative flex min-h-[720px] items-center overflow-hidden px-6 py-24">
       <Image
         src="/cta-bg.jpg"
         alt=""
@@ -29,3 +30,5 @@ export function FinalCTA() {
     </section>
   );
 }
+
+

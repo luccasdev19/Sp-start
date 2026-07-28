@@ -6,7 +6,6 @@ const navItems = [
   { label: "Servicos", href: "/#servicos" },
   { label: "Atendimento", href: "/#atendimento" },
   { label: "Parcerias", href: "/#parcerias" },
-  { label: "Blog", href: "/blog" },
 ];
 
 export function Header() {
@@ -23,7 +22,6 @@ export function Header() {
           className="h-14 w-auto sm:h-16"
         />
         </Link>
-
         <nav className="hidden gap-8 md:flex">
           {navItems.map((item) => (
             <Link
@@ -35,7 +33,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-
         {/* TODO: menu mobile (drawer) ainda nao implementado */}
       </div>
     </header>

@@ -1,5 +1,4 @@
 import { Clock, Users, ShieldCheck, type LucideIcon } from "lucide-react";
-
 export interface Service {
   id: string;
   title: string;
@@ -7,7 +6,6 @@ export interface Service {
   href: string;
   image: string;
 }
-
 export const services: Service[] = [
   {
     id: "gestao-de-ti",
@@ -41,20 +39,18 @@ export const services: Service[] = [
     image: "/projetos.jpg",
   },
 ];
-
 export interface Highlight {
   id: string;
   title: string;
   description: string;
   image: string;
 }
-
 export const highlights: Highlight[] = [
   {
     id: "chamados",
     title: "Sistema de chamados",
     description:
-      "Investimos em uma plataforma de gestão de chamados de alta performance, assegurando respostas rápidas, SLA bem definidos e monitoramento contínuo. Isso garante controle eficiente, organização dos atendimentos e total transparência em cada demanda, proporcionando uma experiência de suporte ágil e confiável para nossos clientes.",
+      "Investimos em uma plataforma de gestão de chamados de alta performance, assegurando respostas rápidas, SLA bem definidos e monitoramento contínuo. Isso garante controle eficiente, organização dos atendimentos e total transparência em cada demanda, proporcionandouma experiência de suporte ágil e confiável para nossos clientes.",
     image: "/highlight-chamados.png",
   },
   {
@@ -79,26 +75,24 @@ export const highlights: Highlight[] = [
     image: "/highlight-gestao.png",
   },
 ];
-
 export interface Stat {
   id: string;
-  value: string;
+  value: number;
+  prefix?: string;
+  suffix?: string;
   label: string;
   icon: LucideIcon;
 }
-
 export const stats: Stat[] = [
-  { id: "resposta", value: "5min", label: "Tempo de resposta", icon: Clock },
-  { id: "atendimentos", value: "+5.000", label: "Atendimentos realizados", icon: Users },
-  { id: "monitoramento", value: "24/7", label: "Monitoramento", icon: ShieldCheck },
+  { id: "resposta", value: 5, suffix: "min", label: "Tempo de resposta", icon: Clock },
+  { id: "atendimentos", value: 5000, prefix: "+", label: "Atendimentos realizados", icon: Users },
+  { id: "monitoramento", value: 24, suffix: "/7", label: "Monitoramento", icon: ShieldCheck },
 ];
-
 export interface Partner {
   id: string;
   name: string;
   logo: string;
 }
-
 export const partners: Partner[] = [
   { id: "oracle", name: "Oracle", logo: "/partner-oracle.svg" },
   { id: "advanced", name: "Advanced", logo: "/partner-advanced.svg" },

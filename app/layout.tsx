@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AnimatedBackground } from "@/components/shared/AnimatedBackground";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={inter.variable}>
+    <html lang="pt-BR" className={cn("font-sans", inter.variable)}>
       <body className="bg-background font-sans text-foreground antialiased">
         <AnimatedBackground />
         <Header />

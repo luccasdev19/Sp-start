@@ -3,7 +3,7 @@ const config: Config = {
   content: [
     "./app/**/*.{ts,tsx,mdx}",
     "./components/**/*.{ts,tsx}",
-    "./content/**/*.{mdx}",
+    "./content/**/*.mdx",
   ],
   theme: {
     extend: {
@@ -33,12 +33,39 @@ const config: Config = {
         whatsapp: {
           DEFAULT: "#25D366",
         },
+        primary: {
+          DEFAULT: "#d4a24e",
+          foreground: "#0d1216",
+        },
+        secondary: {
+          DEFAULT: "#151b20",
+          foreground: "#ffffff",
+        },
+        muted: {
+          DEFAULT: "#212a30",
+          foreground: "#8fa0a8",
+        },
+        destructive: {
+          DEFAULT: "#dc2626",
+          foreground: "#ffffff",
+        },
+        card: {
+          DEFAULT: "#151b20",
+          foreground: "#ffffff",
+        },
+        popover: {
+          DEFAULT: "#151b20",
+          foreground: "#ffffff",
+        },
+        input: "#2a3840",
+        ring: "#d4a24e",
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
       },
       borderRadius: {
         card: "12px",
+        DEFAULT: "0.625rem",
       },
       keyframes: {
         marquee: {

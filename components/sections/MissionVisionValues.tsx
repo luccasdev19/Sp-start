@@ -1,5 +1,7 @@
 import Image from "next/image";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import { FadeIn } from "@/components/shared/FadeIn";
+import { AccentBeam } from "@/components/shared/AccentBeam";
 
 const items = [
   {
@@ -21,23 +23,30 @@ const items = [
 
 export function MissionVisionValues() {
   return (
-    <section className="relative bg-gradient-to-b from-transparent via-surface-1/30 to-transparent px-6 py-24">
-      <div className="mx-auto max-w-6xl">
+    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_30%_20%,_#141a1f_0%,_#090c0f_70%)] px-6 py-24">
+      <AccentBeam flip />
+      <div className="relative z-10 mx-auto max-w-6xl">
+        <FadeIn>
+          <SectionHeading
+            eyebrow="O que nos move"
+            title="Por tras de cada infraestrutura estavel, existe um proposito"
+          />
+        </FadeIn>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           {items.map((item, index) => (
             <FadeIn key={item.title} delay={index * 0.1} className="h-full">
-              <div className="flex h-full flex-col overflow-hidden rounded-card border border-border bg-surface-1">
-                <div className="relative h-40 w-full">
+              <div className="group relative flex h-full scale-100 flex-col overflow-hidden rounded-card border border-border bg-surface-1 shadow-none transition-all duration-500 ease-out hover:z-10 hover:-translate-y-2 hover:scale-110 hover:border-accent/60 hover:shadow-2xl hover:shadow-accent/20">
+                <div className="relative h-56 w-full overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-125"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-surface-1 to-transparent" />
                 </div>
                 <div className="flex flex-1 flex-col p-8 pt-6">
-                  <h3 className="text-lg font-medium text-foreground">
+                  <h3 className="text-lg font-medium text-foreground transition-colors duration-300 group-hover:text-accent">
                     {item.title}
                   </h3>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground-subtle">

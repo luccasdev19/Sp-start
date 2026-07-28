@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
-import { whatsappMessages } from "@/lib/whatsapp";
 import { stats } from "@/lib/constants";
-
+import { StatCounter } from "@/components/shared/StatCounter";
 export function Hero() {
   return (
     <section className="relative flex min-h-[90vh] flex-col overflow-hidden">
@@ -16,7 +15,6 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-petrol/60 via-background/80 to-background" />
       </div>
-
       <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 py-24 text-center">
         <h1 className="text-4xl font-medium leading-tight text-foreground sm:text-6xl">
           Gestao de TI inteligente para empresas que nao podem parar
@@ -25,11 +23,9 @@ export function Hero() {
           Monitoramento continuo, suporte humanizado e infraestrutura que
           acompanha o crescimento do seu negocio.
         </p>
-
         <div className="mt-10">
-          <WhatsAppButton message={whatsappMessages.geral} />
+          <WhatsAppButton label="Fale com o especialista" href="#contato" />
         </div>
-
         <div className="mt-16 grid w-full grid-cols-1 gap-4 sm:grid-cols-3">
           {stats.map((stat) => (
             <div
@@ -38,7 +34,12 @@ export function Hero() {
             >
               <stat.icon size={24} className="text-accent" aria-hidden="true" />
               <span className="text-2xl font-medium text-foreground sm:text-3xl">
-                {stat.value}
+                <StatCounter value={stat.value} prefix={stat.prefix} />
+                {stat.suffix && (
+                  <span className="ml-1 text-lg font-normal text-foreground-subtle">
+                    {stat.suffix}
+                  </span>
+                )}
               </span>
               <span className="text-center text-sm text-foreground-subtle">
                 {stat.label}
