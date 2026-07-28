@@ -1,30 +1,171 @@
+
 import Link from "next/link";
 
+import Image from "next/image";
+
+import { Mail, Instagram, MessageCircle } from "lucide-react";
+
+const navItems = [
+
+  { label: "Quem somos", href: "/#quem-somos" },
+
+  { label: "Servicos", href: "/#servicos" },
+
+  { label: "Atendimento", href: "/#atendimento" },
+
+  { label: "Parcerias", href: "/#parcerias" },
+
+];
+
+const contactItems = [
+
+  {
+
+    label: "comercial@spstart.com",
+
+    href: "mailto:contato@spstart.com.br",
+
+    icon: Mail,
+
+  },
+
+  {
+
+    label: "WhatsApp",
+
+    href: "https://wa.me/5511992685241",
+
+    icon: MessageCircle,
+
+  },
+
+  {
+
+    label: "Instagram",
+
+    href: "https://www.instagram.com/spstart.tec/",
+
+    icon: Instagram,
+
+  },
+
+];
+
 export function Footer() {
+
   const year = new Date().getFullYear();
+
   return (
-    <footer className="border-t border-border">
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
+
+    <footer className="border-t border-border bg-surface-1">
+
+      <div className="mx-auto max-w-6xl px-6 py-16">
+
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
+
           <div>
-            <p className="text-sm font-medium text-foreground">SP START</p>
-            <p className="mt-2 max-w-xs text-sm text-foreground-subtle">
-              Solucoes em TI, gestao de infraestrutura e suporte especializado.
+
+            <Image
+
+              src="/spstart-logo.png"
+
+              alt="SP START Solucoes em TI"
+
+              width={160}
+
+              height={58}
+
+              className="h-12 w-auto"
+
+            />
+
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground-subtle">
+
+              Infraestrutura de TI estável, segura e preparada para o crescimento do seu negócio.
+
             </p>
+
           </div>
-          <nav className="flex flex-col gap-2 text-sm text-foreground-subtle">
-            <Link href="/#quem-somos" className="hover:text-foreground">
-              Quem somos
-            </Link>
-            <Link href="/servicos" className="hover:text-foreground">
-              Servicos
-            </Link>
-          </nav>
+
+          <div>
+
+            <h4 className="text-sm font-medium text-foreground">Navegação</h4>
+
+            <nav className="mt-4 flex flex-col gap-3">
+
+              {navItems.map((item) => (
+
+                <Link
+
+                  key={item.href}
+
+                  href={item.href}
+
+                  className="text-sm text-foreground-muted transition-colors hover:text-foreground"
+
+                >
+
+                  {item.label}
+
+                </Link>
+
+              ))}
+
+            </nav>
+
+          </div>
+
+          <div>
+
+            <h4 className="text-sm font-medium text-foreground">Contato</h4>
+
+            <div className="mt-4 flex flex-col gap-3">
+
+              {contactItems.map((item) => (
+
+                <a
+
+                  key={item.label}
+
+                  href={item.href}
+
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+
+                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+
+                  className="flex items-center gap-2 text-sm text-foreground-muted transition-colors hover:text-foreground"
+
+                >
+
+                  <item.icon size={16} className="text-accent" aria-hidden="true" />
+
+                  {item.label}
+
+                </a>
+
+              ))}
+
+            </div>
+
+          </div>
+
         </div>
-        <p className="mt-12 text-xs text-foreground-subtle">
-          {year} SP START Solucoes em TI. Todos os direitos reservados.
-        </p>
+
+        <div className="mt-12 border-t border-border pt-6">
+
+          <p className="text-sm text-foreground-subtle">
+
+            © {year} SP START Soluções em TI. Todos os direitos reservados.
+
+          </p>
+
+        </div>
+
       </div>
+
     </footer>
+
   );
+
 }
+
