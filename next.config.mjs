@@ -12,7 +12,6 @@ const cspHeader = [
   "upgrade-insecure-requests",
   "block-all-mixed-content",
 ].join('; ');
-
 const nextConfig = {
   reactStrictMode: true,
   async headers() {
@@ -45,5 +44,4 @@ const nextConfig = {
     ];
   },
 };
-
 export default nextConfig;
