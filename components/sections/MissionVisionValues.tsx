@@ -41,6 +41,7 @@ export function MissionVisionValues() {
                     src={item.image}
                     alt={item.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-125"
                   />
                 </div>
