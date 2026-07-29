@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { AnimatedBackground } from "@/components/shared/AnimatedBackground";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -24,7 +23,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={cn("font-sans", inter.variable)}>
       <body className="bg-background font-sans text-foreground antialiased">
-        <AnimatedBackground />
         <Header />
         <main>{children}</main>
         <Footer />
