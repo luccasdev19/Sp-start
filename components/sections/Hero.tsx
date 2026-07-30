@@ -23,8 +23,14 @@ export function Hero() {
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted">
           Monitoramento contínuo, suporte humanizado e infraestrutura que acompanha o crescimento do seu negócio.
         </p>
-        <div className="mt-10">
-          <WhatsAppButton label="Fale com um especialista" href="#contato" />
+        <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+          <WhatsAppButton label="Descubra como reduzir falhas" href="#contato" />
+          <a
+            href="#servicos"
+            className="inline-flex items-center justify-center rounded-full border border-border px-8 py-4 text-base font-medium text-foreground transition-colors hover:bg-surface-1"
+          >
+            Conheça nossos serviços
+          </a>
         </div>
         <div className="mt-16 grid w-full grid-cols-1 gap-4 sm:grid-cols-3">
           {stats.map((stat) => (

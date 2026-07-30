@@ -7,19 +7,19 @@ const blocks = [
     id: "suporte-tecnico",
     title: "Suporte técnico",
     description:
-      "Placeholder: lista as 10 modalidades de suporte (WhatsApp, e-mail, chamados, remoto, presencial, SLA, monitoramento 24/7...).",
+      "Oferecemos suporte ágil por WhatsApp, e-mail, chamados, atendimento remoto e presencial, com SLA claro, monitoramento 24/7 e resposta rápida para manter sua operação sempre ativa.",
   },
   {
     id: "consultoria",
     title: "Consultoria de TI",
     description:
-      "Placeholder: diagnóstico, migração para a nuvem, segurança, gestão de licenças e otimização de custos.",
+      "Ajudamos sua empresa a tomar decisões mais seguras com diagnóstico de infraestrutura, migração para a nuvem, fortalecimento da segurança e otimização de custos de tecnologia.",
   },
   {
     id: "projetos",
     title: "Projetos",
     description:
-      "Placeholder: rede sem fio/cabeada, migração de dados e e-mails, estruturação de parque de TI.",
+      "Planejamos e executamos projetos de rede, migração de dados e e-mails, modernização de ambientes e estruturação completa do parque de TI com foco em performance e confiabilidade.",
   },
 ];
 

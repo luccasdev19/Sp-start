@@ -14,7 +14,7 @@ export function FinalCTA() {
             Fale com um especialista.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground-muted">
-            Sua empresa merece uma infraestrutura de TI estável, segura e pronta para crescer. Fale com a SP START.
+            Sua empresa merece uma infraestrutura de TI estável, segura e pronta para crescer. Converse com a SP START e descubra como eliminar gargalos e ganhar mais previsibilidade operacional.
           </p>
           <div className="mt-10 flex justify-center">
             <WhatsAppButton message={whatsappMessages.geral} />
