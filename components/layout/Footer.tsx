@@ -11,8 +11,8 @@ const navItems = [
 
 const contactItems = [
   {
-    label: "contato@spstart.com.br",
-    href: "mailto:contato@spstart.com.br",
+    label: "comercial@spstart.com",
+    href: "mailto:comercial@spstart.com",
     icon: Mail,
   },
   {
@@ -43,7 +43,7 @@ export function Footer() {
               className="h-12 w-auto"
             />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground-subtle">
-              Infraestrutura de TI estável, segura e preparada para o crescimento do seu negócio.
+              Infraestrutura de TI estável, segura e preparada para o crescimento do seunegócio.
             </p>
           </div>
 
@@ -90,4 +90,3 @@ export function Footer() {
     </footer>
   );
 }
-

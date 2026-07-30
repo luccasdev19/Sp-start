@@ -1,13 +1,9 @@
 "use client";
 
 import { useState } from "react";
-
 import Link from "next/link";
-
 import Image from "next/image";
-
 import { Menu, X } from "lucide-react";
-
 import { AnimatePresence, motion } from "framer-motion";
 
 const navItems = [
@@ -30,6 +26,7 @@ export function Header() {
             width={180}
             height={65}
             priority
+            loading="eager"
             className="h-14 w-auto sm:h-16"
           />
         </Link>
@@ -84,5 +81,3 @@ export function Header() {
     </header>
   );
 }
-
-
