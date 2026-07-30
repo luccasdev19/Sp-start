@@ -5,7 +5,7 @@ import { StatCounter } from "@/components/shared/StatCounter";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[90vh] flex-col overflow-hidden">
+    <section className="relative flex min-h-[90svh] flex-col overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/hero-noc.jpg"
