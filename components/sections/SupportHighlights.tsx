@@ -15,7 +15,8 @@ export function SupportHighlights() {
         <FadeIn>
           <SectionHeading
             eyebrow="Atendimento"
-            title="Um atendimento diferenciado, do primeiro contato ao suporte continuo"
+            title="Um atendimento diferenciado, do primeiro contato ao suporte contínuo."
+            description="Atendimento ágil, humanizado e focado em manter sua operação em movimento."
           />
         </FadeIn>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

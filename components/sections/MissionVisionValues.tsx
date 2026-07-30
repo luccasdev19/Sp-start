@@ -5,12 +5,12 @@ import { AccentBeam } from "@/components/shared/AccentBeam";
 
 const items = [
   {
-    title: "Missao",
-    description: "Fornecer soluções completas em Tecnologia da Informação que garantam segurança, eficiência e continuidade operacional, permitindo que nossos clientes foquem no crescimento de seus negócios com tranquilidade e alta performance.",
+    title: "Missão",
+    description: "Fornecer soluções completas em tecnologia da informação que garantam segurança, eficiência e continuidade operacional, permitindo que nossos clientes foquem no crescimento de seus negócios com tranquilidade e alta performance.",
     image: "/mission.jpg",
   },
   {
-    title: "Visao",
+    title: "Visão",
     description: "Ser reconhecida como uma empresa de referência em serviços de TI, destacando-se pela excelência no atendimento, inovação constante e geração de valor estratégico, tornando-se parceira essencial na evolução tecnológica dos nossos clientes.",
     image: "/vision.jpg",
   },
@@ -29,7 +29,7 @@ export function MissionVisionValues() {
         <FadeIn>
           <SectionHeading
             eyebrow="O que nos move"
-            title="Por tras de cada infraestrutura estavel, existe um proposito"
+            title="Por trás de cada infraestrutura estável, existe um propósito."
           />
         </FadeIn>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">

@@ -1,15 +1,17 @@
 import { createElement } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
+
 interface WhatsAppButtonProps {
   message?: string;
   label?: string;
   variant?: "primary" | "ghost";
   href?: string;
 }
+
 export function WhatsAppButton({
   message,
-  label = "Falar no WhatsApp",
+  label = "Fale com um especialista",
   variant = "primary",
   href,
 }: WhatsAppButtonProps) {

@@ -11,10 +11,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SP START Solucoes em TI",
+  title: "SP START Soluções em TI",
   description:
-    "Gestao de TI, monitoramento e suporte tecnico especializado para empresas.",
+    "Gestão de TI, monitoramento e suporte técnico especializado para empresas.",
 };
+
 export default function RootLayout({
   children,
 }: {

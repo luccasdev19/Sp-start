@@ -1,4 +1,5 @@
 import { Clock, Users, ShieldCheck, type LucideIcon } from "lucide-react";
+
 export interface Service {
   id: string;
   title: string;
@@ -6,58 +7,58 @@ export interface Service {
   href: string;
   image: string;
 }
+
 export const services: Service[] = [
   {
     id: "gestao-de-ti",
-    title: "Gestao de T.I",
-    description: "Mais controle, menos problemas, melhores resultados.",
+    title: "Gestão de TI",
+    description: "Mais controle, menos problemas e melhores resultados.",
     href: "/servicos",
     image: "/gestao-de-ti.jpg",
   },
   {
     id: "consultoria",
-    title: "Consultoria de T.I",
-    description:
-      "Diagnostico, migracao para nuvem, segurança e otimizacao de custos.",
+    title: "Consultoria de TI",
+    description: "Diagnóstico, migração para a nuvem, segurança e otimização de custos.",
     href: "/servicos",
     image: "/consultoria.jpg",
   },
   {
     id: "suporte",
-    title: "Suporte tecnico",
-    description:
-      "Atendimento via WhatsApp, remoto ou presencial, com SLA definido.",
+    title: "Suporte técnico",
+    description: "Atendimento via WhatsApp, remoto ou presencial, com SLA definido.",
     href: "/servicos",
     image: "/suporte.jpg",
   },
   {
     id: "projetos",
     title: "Projetos",
-    description:
-      "Redes, migracao de dados e estruturacao completa do parque de TI.",
+    description: "Redes, migração de dados e estruturação completa do parque de TI.",
     href: "/servicos",
     image: "/projetos.jpg",
   },
 ];
+
 export interface Highlight {
   id: string;
   title: string;
   description: string;
   image: string;
 }
+
 export const highlights: Highlight[] = [
   {
     id: "chamados",
     title: "Sistema de chamados",
     description:
-      "Investimos em uma plataforma de gestão de chamados de alta performance, assegurando respostas rápidas, SLA bem definidos e monitoramento contínuo. Isso garante controle eficiente, organização dos atendimentos e total transparência em cada demanda, proporcionandouma experiência de suporte ágil e confiável para nossos clientes.",
+      "Investimos em uma plataforma de gestão de chamados de alta performance, assegurando respostas rápidas, SLA bem definidos e monitoramento contínuo. Isso garante controle eficiente, organização dos atendimentos e total transparência em cada demanda, proporcionando uma experiência de suporte ágil e confiável para nossos clientes.",
     image: "/highlight-chamados.png",
   },
   {
     id: "atendimento",
     title: "Atendimento humanizado",
     description:
-      "Tecnologia e Inteligência Artificial potencializam nossos processos, mas são as pessoas que fazem a diferença. Nosso atendimento é 100% humanizado, garantindo análise precisa, decisões assertivas e soluções realmente eficazes para cada cliente.",
+      "Tecnologia e inteligência artificial potencializam nossos processos, mas são as pessoas que fazem a diferença. Nosso atendimento é 100% humanizado, garantindo análise precisa, decisões assertivas e soluções realmente eficazes para cada cliente.",
     image: "/highlight-atendimento.png",
   },
   {
@@ -75,6 +76,7 @@ export const highlights: Highlight[] = [
     image: "/highlight-gestao.png",
   },
 ];
+
 export interface Stat {
   id: string;
   value: number;
@@ -83,16 +85,19 @@ export interface Stat {
   label: string;
   icon: LucideIcon;
 }
+
 export const stats: Stat[] = [
   { id: "resposta", value: 5, suffix: "min", label: "Tempo de resposta", icon: Clock },
   { id: "atendimentos", value: 5000, prefix: "+", label: "Atendimentos realizados", icon: Users },
   { id: "monitoramento", value: 24, suffix: "/7", label: "Monitoramento", icon: ShieldCheck },
 ];
+
 export interface Partner {
   id: string;
   name: string;
   logo: string;
 }
+
 export const partners: Partner[] = [
   { id: "oracle", name: "Oracle", logo: "/partner-oracle.svg" },
   { id: "advanced", name: "Advanced", logo: "/partner-advanced.svg" },

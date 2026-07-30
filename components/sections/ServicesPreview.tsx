@@ -10,8 +10,9 @@ export function ServicesPreview() {
     <section id="servicos" className="mx-auto max-w-6xl px-6 py-24">
       <FadeIn>
         <SectionHeading
-          eyebrow="Servicos"
-          title="Solucoes completas para sua infraestrutura"
+          eyebrow="Serviços"
+          title="Soluções completas para sua infraestrutura."
+          description="Soluções sob medida para reduzir falhas, aumentar produtividade e dar mais previsibilidade ao seu negócio."
         />
       </FadeIn>
 
@@ -39,7 +40,7 @@ export function ServicesPreview() {
                   {service.description}
                 </p>
                 <span className="mt-6 inline-flex items-center gap-1 text-sm text-accent">
-                  Saiba mais
+                  Saiba mais.
                   <ArrowRight
                     size={14}
                     className="transition-transform group-hover:translate-x-1"

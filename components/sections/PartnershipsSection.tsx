@@ -10,8 +10,8 @@ export function PartnershipsSection() {
       <FadeIn>
         <SectionHeading
           eyebrow="Parcerias"
-          title="Parcerias estrategicas com os principais fornecedores do mercado"
-          description="Trabalhamos com marcas de referencia global em tecnologia, garantindo solucoes robustas, atualizadas e com suporte de ponta para a infraestrutura dos nossosclientes."
+          title="Parcerias estratégicas com os principais fornecedores do mercado."
+          description="Trabalhamos com marcas de referência global em tecnologia, garantindo soluções robustas, atualizadas e com suporte de ponta para a infraestrutura dos nossos clientes."
         />
       </FadeIn>
 

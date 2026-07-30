@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import { getAllPosts } from "@/lib/mdx";
 
 export const metadata = {
-  title: "Blog | SP START Solucoes em TI",
+  title: "Blog | SP START Soluções em TI",
 };
 
 function formatDate(date: string) {
@@ -21,7 +21,7 @@ export default function BlogPage() {
     <div className="mx-auto max-w-6xl px-6 py-24">
       <SectionHeading
         eyebrow="Blog"
-        title="Conteudo sobre infraestrutura, seguranca e gestao de TI"
+        title="Conteúdo sobre infraestrutura, segurança e gestão de TI."
       />
 
       {posts.length === 0 ? (
