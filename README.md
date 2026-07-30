@@ -1,64 +1,70 @@
-# SP START Solucoes em TI — site institucional
+# SP START Soluções em TI
 
-Esqueleto inicial do site, construido com Next.js 14 (App Router),
-TypeScript, Tailwind CSS e MDX para o blog.
+Site institucional da SP START, desenvolvido com Next.js, TypeScript e Tailwind CSS. O projeto possui uma landing page completa com página de serviços. 
 
-## Como rodar
+## Tecnologias
 
-```
+- Next.js 16
+- React 18
+- TypeScript
+- Tailwind CSS
+- MDX para o blog
+- Framer Motion para pequenas animações
+- Lucide React e React Icons
+
+## Funcionalidades atuais
+
+- Landing page com seção de hero, estatísticas, sobre, missão/visão/valores, serviços, atendimento, parcerias e CTA final
+- Página de serviços com conteúdo institucional e botão de contato
+- Botão de WhatsApp reutilizável com mensagens específicas por contexto
+- Estrutura responsiva e visual institucional
+
+## Requisitos
+
+- Node.js 18+ recomendado
+- npm ou pnpm
+
+## Como rodar localmente
+
+1. Instale as dependências:
+
+```bash
 npm install
-cp .env.local.example .env.local
 ```
 
-Edite o `.env.local` e defina `NEXT_PUBLIC_WHATSAPP_NUMBER` com o numero
-real, no formato internacional sem espacos (ex: 5511999999999).
+2. Crie um arquivo `.env.local` na raiz do projeto com a variável abaixo:
 
+```env
+NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
 ```
+
+> O valor deve estar no formato internacional, sem espaços.
+
+3. Inicie o servidor de desenvolvimento:
+
+```bash
 npm run dev
 ```
 
-O site sobe em `http://localhost:3000`.
+Acesse: http://localhost:3000
 
-## O que ja esta pronto
+## Scripts
 
-- Home (`/`) com todas as secoes: Hero, stats, quem somos, missao/visao/valores,
-  preview de servicos, atendimento, parcerias e CTA final.
-- Pagina de Servicos (`/servicos`) com os 3 blocos de conteudo.
-- Blog (`/blog`) funcional com MDX: lista posts de `content/blog/*.mdx`
-  e renderiza cada post em `/blog/[slug]`. Ja tem 3 posts de exemplo.
-- Botao de WhatsApp reutilizavel (`components/shared/WhatsAppButton.tsx`),
-  com mensagens diferentes por secao (`lib/whatsapp.ts`).
-- Paleta de cores dark/gray configurada no `tailwind.config.ts`.
-
-## O que falta (pontos ainda em aberto)
-
-1. **Accent color definitivo** — hoje esta um azul-acinzentado provisorio
-   em `tailwind.config.ts` (`colors.accent`). Trocar quando decidido.
-2. **Feature extra** do site — ainda nao definida.
-3. **Conteudo real** — os textos institucionais (Quem somos, Missao/Visao/Valores,
-   Parcerias, blocos de Servicos) estao como placeholder e precisam ser
-   substituidos pelo conteudo real extraido do site atual em Wix.
-4. **shadcn/ui** — o `components/ui/button.tsx` e um placeholder simples;
-   rodar `npx shadcn@latest init` e `npx shadcn@latest add button` quando
-   quiser os componentes oficiais.
-5. **Menu mobile** — o Header ainda nao tem versao para telas pequenas.
-
-## Publicando um novo post no blog
-
-Criar um arquivo `.mdx` em `content/blog/`, seguindo o frontmatter dos
-posts de exemplo:
-
-```
----
-title: "Titulo do post"
-excerpt: "Resumo curto que aparece no card da listagem"
-date: "2026-07-01"
-tag: "Categoria"
----
-
-teste no readme
-Conteudo do post em markdown.
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
 ```
 
-O build estatico (SSG) gera a pagina automaticamente a partir do slug
-(nome do arquivo).
+## Estrutura principal
+
+```text
+app/                # Rotas e páginas do Next.js
+components/         # Componentes reutilizáveis do site
+lib/                # Constantes, utilidades e integração do WhatsApp
+public/             # Imagens e assets estáticos
+```
+## Observações
+
+O projeto já está funcional e compilando, mas ainda pode receber melhorias de conteúdo, SEO e conversão ao longo do desenvolvimento.
