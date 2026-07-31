@@ -26,8 +26,4 @@ export const whatsappMessages = {
   geral: DEFAULT_MESSAGE,
   monitoramento:
     "Olá, quero saber mais sobre o serviço de monitoramento 24/7 da SP START.",
-  consultoria:
-    "Olá, gostaria de agendar uma consultoria de TI com a SP START.",
-  suporte:
-    "Olá, preciso de suporte técnico e quero conhecer os planos da SP START.",
 } as const;

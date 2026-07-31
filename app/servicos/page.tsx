@@ -1,51 +1,30 @@
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
-import { whatsappMessages } from "@/lib/whatsapp";
-
-const blocks = [
-  {
-    id: "suporte-tecnico",
-    title: "Suporte técnico",
-    description:
-      "Oferecemos suporte ágil por WhatsApp, e-mail, chamados, atendimento remoto e presencial, com SLA claro, monitoramento 24/7 e resposta rápida para manter sua operação sempre ativa.",
-  },
-  {
-    id: "consultoria",
-    title: "Consultoria de TI",
-    description:
-      "Ajudamos sua empresa a tomar decisões mais seguras com diagnóstico de infraestrutura, migração para a nuvem, fortalecimento da segurança e otimização de custos de tecnologia.",
-  },
-  {
-    id: "projetos",
-    title: "Projetos",
-    description:
-      "Planejamos e executamos projetos de rede, migração de dados e e-mails, modernização de ambientes e estruturação completa do parque de TI com foco em performance e confiabilidade.",
-  },
-];
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { services } from "@/lib/constants";
 
 export default function ServicosPage() {
   return (
-    <div className="mx-auto max-w-4xl px-6 py-24">
-      <SectionHeading
-        eyebrow="Serviços"
-        title="Tudo o que sua empresa precisa em infraestrutura de TI."
-      />
+    <div className="mx-auto max-w-4xl px-6 py-20 sm:py-24">
+      <header>
+        <SectionHeading
+          eyebrow="Serviços"
+          title="Soluções completas para sua infraestrutura."
+          description="Escolha o serviço que melhor atende ao momento da sua empresa e conheça como podemos apoiar sua operação."
+        />
+      </header>
 
-      <div className="flex flex-col gap-16">
-        {blocks.map((block) => (
-          <div key={block.id} id={block.id}>
-            <h2 className="text-2xl font-medium text-foreground">
-              {block.title}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-foreground-muted">
-              {block.description}
-            </p>
-          </div>
+      <div className="grid gap-4 sm:grid-cols-2">
+        {services.map((service) => (
+          <Link key={service.id} href={service.href} className="group rounded-card border border-border bg-surface-1 p-7 transition-colors hover:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4 focus-visible:ring-offset-background">
+            <h2 className="text-lg font-medium text-foreground">{service.title}</h2>
+            <p className="mt-3 text-sm leading-relaxed text-foreground-subtle">{service.description}</p>
+            <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-accent">
+              Conheça o serviço
+              <ArrowUpRight size={16} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+            </span>
+          </Link>
         ))}
-      </div>
-
-      <div className="mt-20">
-        <WhatsAppButton message={whatsappMessages.consultoria} />
       </div>
     </div>
   );

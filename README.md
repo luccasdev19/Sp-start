@@ -15,9 +15,30 @@ Site institucional da SP START, desenvolvido com Next.js, TypeScript e Tailwind 
 ## Funcionalidades atuais
 
 - Landing page com seção de hero, estatísticas, sobre, missão/visão/valores, serviços, atendimento, parcerias e CTA final
-- Página de serviços com conteúdo institucional e botão de contato
+- Página `/servicos` com acesso às quatro soluções principais
+- Páginas individuais para Consultoria, Projetos, Gestão de TI e Suporte Técnico
+- Conteúdo dos serviços centralizado em `lib/constants.ts`, reutilizado na home, na listagem e nas páginas detalhadas
+- Timeline de leitura integrada às páginas de serviço, com animações discretas de progresso, conclusão e acessibilidade
 - Botão de WhatsApp reutilizável com mensagens específicas por contexto
 - Estrutura responsiva e visual institucional
+
+## Serviços e jornada de leitura
+
+Cada serviço possui uma rota própria:
+
+- `/servicos/consultoria`
+- `/servicos/projetos`
+- `/servicos/gestao`
+- `/servicos/suporte`
+
+As páginas detalhadas usam o componente `ServiceReadingTimeline`. A timeline é um elemento inline, posicionado antes do CTA, e representa somente a leitura da página atual. Sua jornada é unidirecional:
+
+1. `hidden`: permanece invisível até entrar na área de leitura.
+2. `entering`: aparece com fade e deslocamento vertical suave.
+3. `tracking`: preenche linha e anéis conforme o usuário percorre o trecho local da timeline.
+4. `completed`: conclui o ícone final com um glow sutil e permanece estática antes do botão de contato.
+
+Essa arquitetura usa Framer Motion (`useInView` e `useScroll`) para evitar reposicionamentos de layout, listeners manuais de scroll e a aparência de widget flutuante.
 
 ## Requisitos
 
@@ -67,4 +88,4 @@ public/             # Imagens e assets estáticos
 ```
 ## Observações
 
-O projeto já está funcional e compilando, mas ainda pode receber melhorias de conteúdo, SEO e conversão ao longo do desenvolvimento.
+O projeto pode receber melhorias contínuas de conteúdo, SEO e conversão.

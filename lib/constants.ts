@@ -4,38 +4,90 @@ export interface Service {
   id: string;
   title: string;
   description: string;
+  longDescription: string;
+  content: string[];
+  benefits: string[];
   href: string;
   image: string;
+  whatsappMessage: string;
 }
 
 export const services: Service[] = [
   {
-    id: "gestao-de-ti",
-    title: "Gestão de TI",
-    description: "Mais controle, menos problemas e melhores resultados.",
-    href: "/servicos",
-    image: "/gestao-de-ti.jpg",
-  },
-  {
     id: "consultoria",
     title: "Consultoria de TI",
     description: "Diagnóstico, migração para a nuvem, segurança e otimização de custos.",
-    href: "/servicos",
+    longDescription:
+      "Transformamos desafios de tecnologia em decisões claras, com uma leitura completa do seu ambiente e um plano de evolução alinhado ao ritmo do seu negócio.",
+    content: [
+      "Toda decisão de TI tem impacto direto na continuidade e no crescimento da operação. Por isso, começamos entendendo o ambiente atual, os processos críticos e os objetivos que orientam o negócio.",
+      "A partir desse diagnóstico, traduzimos necessidades técnicas em prioridades práticas. O resultado é um plano de ação claro, que reduz riscos, organiza investimentos e oferece segurança para cada próximo passo.",
+    ],
+    benefits: [
+      "Diagnóstico completo da infraestrutura",
+      "Planejamento seguro para nuvem e segurança",
+      "Otimização de investimentos em tecnologia",
+    ],
+    href: "/servicos/consultoria",
     image: "/consultoria.jpg",
-  },
-  {
-    id: "suporte",
-    title: "Suporte técnico",
-    description: "Atendimento via WhatsApp, remoto ou presencial, com SLA definido.",
-    href: "/servicos",
-    image: "/suporte.jpg",
+    whatsappMessage: "Olá, gostaria de agendar uma consultoria de TI com a SP START.",
   },
   {
     id: "projetos",
     title: "Projetos",
     description: "Redes, migração de dados e estruturação completa do parque de TI.",
-    href: "/servicos",
+    longDescription:
+      "Planejamos e executamos cada etapa com método, comunicação e precisão para modernizar sua operação sem criar interrupções desnecessárias.",
+    content: [
+      "Projetos de infraestrutura exigem muito mais do que tecnologia: exigem planejamento, controle de impactos e uma execução que respeite a rotina de quem depende do ambiente todos os dias.",
+      "Nossa equipe conduz cada etapa com transparência, da definição do escopo à validação final. Assim, sua empresa ganha um ambiente mais preparado, sem perder visibilidade sobre o que está acontecendo.",
+    ],
+    benefits: [
+      "Implantação de redes e infraestrutura",
+      "Migração de dados e e-mails com segurança",
+      "Ambientes prontos para crescer com performance",
+    ],
+    href: "/servicos/projetos",
     image: "/projetos.jpg",
+    whatsappMessage: "Olá, quero conversar sobre um projeto de infraestrutura de TI.",
+  },
+  {
+    id: "gestao",
+    title: "Gestão de TI",
+    description: "Mais controle, menos problemas e melhores resultados.",
+    longDescription:
+      "Assumimos a visão contínua da sua TI para antecipar riscos, organizar prioridades e manter sua infraestrutura trabalhando a favor da empresa.",
+    content: [
+      "Uma operação estável não depende apenas de resolver incidentes. Ela precisa de acompanhamento constante, critérios bem definidos e uma visão que conecte o dia a dia aos objetivos da empresa.",
+      "Com a gestão de TI da SP START, sua infraestrutura passa a ser acompanhada de forma ativa. Você tem mais clareza sobre prioridades, menos surpresas e apoio especializado para tomar decisões melhores.",
+    ],
+    benefits: [
+      "Monitoramento proativo do ambiente",
+      "Indicadores claros para decisões melhores",
+      "Prevenção de falhas e redução de riscos",
+    ],
+    href: "/servicos/gestao",
+    image: "/gestao-de-ti.jpg",
+    whatsappMessage: "Olá, quero conhecer a gestão de TI da SP START.",
+  },
+  {
+    id: "suporte",
+    title: "Suporte Técnico",
+    description: "Atendimento via WhatsApp, remoto ou presencial, com SLA definido.",
+    longDescription:
+      "Quando sua operação precisa seguir em frente, nosso time atua com agilidade, proximidade e processos claros para resolver o que importa.",
+    content: [
+      "Quando ocorre uma falha, cada minuto importa. Nosso suporte combina canais acessíveis, processos organizados e profissionais preparados para entender o impacto antes de propor a solução.",
+      "Mais do que encerrar chamados, trabalhamos para que os problemas não se repitam. O acompanhamento contínuo oferece previsibilidade à sua equipe e mantém a tecnologia disponível para o trabalho seguir.",
+    ],
+    benefits: [
+      "Atendimento remoto e presencial",
+      "SLA definido e comunicação transparente",
+      "Monitoramento contínuo e resposta rápida",
+    ],
+    href: "/servicos/suporte",
+    image: "/suporte.jpg",
+    whatsappMessage: "Olá, preciso de suporte técnico e quero conhecer os planos da SP START.",
   },
 ];
 
