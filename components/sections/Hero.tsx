@@ -15,7 +15,7 @@ export function Hero() {
           sizes="100vw"
           className="object-cover object-[65%_center] sm:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-petrol/70 via-background/55 to-background/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-petrol/50 via-background/35 to-background/55" />
       </div>
       <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 py-16 text-center sm:py-20">
         <h1 className="text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">

@@ -13,7 +13,7 @@ export function FinalCTA() {
         sizes="100vw"
         className="object-cover object-[65%_center] sm:object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/70 to-background/85" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/45 to-background/60" />
       <FadeIn className="w-full">
         <div className="relative z-10 mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-medium text-foreground sm:text-4xl">
