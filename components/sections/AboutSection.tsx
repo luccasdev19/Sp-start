@@ -24,7 +24,7 @@ export function AboutSection() {
           />
         </FadeIn>
         <FadeIn delay={0.1}>
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-card border border-border">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-card border border-border lg:ml-auto lg:max-w-[480px] lg:justify-self-end">
             <Image
               src="/about-team.jpg"
               alt="Equipe da SP START analisando infraestrutura de TI"

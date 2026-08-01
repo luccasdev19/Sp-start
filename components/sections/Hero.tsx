@@ -13,7 +13,7 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[65%_center] sm:object-center"
+          className="h-full w-full object-contain object-center sm:object-cover sm:object-[65%_center]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-petrol/50 via-background/35 to-background/55" />
       </div>
