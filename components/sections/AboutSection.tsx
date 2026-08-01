@@ -15,7 +15,7 @@ export function AboutSection() {
         />
         <div className="absolute inset-0 bg-background/70" />
       </div>
-      <div className="relative z-10 mx-auto grid max-w-6xl gap-12 grid-cols-2 items-center">
+      <div className="relative z-10 mx-auto grid max-w-6xl gap-12 grid-cols-1 md:grid-cols-2 md:items-center">
         <FadeIn>
           <SectionHeading
             eyebrow="Quem somos"
@@ -24,7 +24,7 @@ export function AboutSection() {
           />
         </FadeIn>
         <FadeIn delay={0.1}>
-          <div className="relative aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-card border border-border justify-self-end">
+          <div className="relative aspect-[3/2] w-full max-w-[420px] overflow-hidden rounded-card border border-border mx-auto md:justify-self-end md:aspect-[4/5]">
             <Image
               src="/about-team.jpg"
               alt="Equipe da SP START analisando infraestrutura de TI"
