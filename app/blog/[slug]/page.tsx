@@ -4,15 +4,16 @@ import remarkGfm from "remark-gfm";
 import { getAllSlugs, getPostBySlug } from "@/lib/mdx";
 
 interface PostPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: PostPageProps) {
-  const post = getPostBySlug(params.slug);
+export async function generateMetadata({ params }: PostPageProps) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return {};
@@ -32,8 +33,9 @@ function formatDate(date: string) {
   });
 }
 
-export default function PostPage({ params }: PostPageProps) {
-  const post = getPostBySlug(params.slug);
+export default async function PostPage({ params }: PostPageProps) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     notFound();
