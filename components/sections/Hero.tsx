@@ -14,7 +14,7 @@ export function Hero() {
           priority
           draggable={false}
           sizes="100vw"
-          className="select-none object-cover object-[85%_center] scale-110 sm:object-center sm:scale-105"
+          className="select-none object-cover object-[85%_center] scale-110 sm:object-[65%_center] sm:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-petrol/50 via-background/35 to-background/55" />
       </div>
