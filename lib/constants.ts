@@ -29,7 +29,7 @@ export const services: Service[] = [
       "Otimização de licenças e condições diferenciadas em soluções Microsoft",
     ],
     href: "/servicos/consultoria",
-    image: "/consultoria.jpg",
+    image: "/highlight-consultoria_claro.png",
     whatsappMessage: "Olá, gostaria de agendar uma consultoria de TI com a SP START.",
   },
   {
@@ -48,7 +48,7 @@ export const services: Service[] = [
       "Infraestrutura documentada e preparada para crescer",
     ],
     href: "/servicos/projetos",
-    image: "/projetos.jpg",
+    image: "/highlight-projetos_claro.png",
     whatsappMessage: "Olá, quero conversar sobre um projeto de infraestrutura de TI.",
   },
   {
@@ -67,7 +67,7 @@ export const services: Service[] = [
       "Planejamento de melhorias e investimentos em TI",
     ],
     href: "/servicos/gestao",
-    image: "/gestao-de-ti.jpg",
+    image: "/highlight-gestao_claro.png",
     whatsappMessage: "Olá, quero conhecer a gestão de TI da SP START.",
   },
   {
@@ -86,7 +86,7 @@ export const services: Service[] = [
       "Comunicação clara do início à conclusão",
     ],
     href: "/servicos/suporte",
-    image: "/suporte.jpg",
+    image: "/highlight-suporte_claro.png",
     whatsappMessage: "Olá, preciso de suporte técnico e quero conhecer os planos da SP START.",
   },
 ];
