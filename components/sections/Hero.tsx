@@ -41,7 +41,7 @@ export function Hero() {
               className="flex items-center gap-4 rounded-card border border-border bg-surface-1/90 px-5 py-4 sm:aspect-square sm:flex-col sm:justify-center sm:gap-3 sm:bg-surface-1/70 sm:p-6 sm:backdrop-blur-sm"
             >
               <stat.icon size={24} className="text-accent" aria-hidden="true" />
-              <span className="text-2xl font-medium text-foreground sm:text-3xl">
+              <span className="w-20 shrink-0 text-center text-2xl font-medium tabular-nums text-foreground sm:w-auto sm:shrink sm:text-3xl sm:proportional-nums">
                 <StatCounter value={stat.value} prefix={stat.prefix} />
                 {stat.suffix && (
                   <span className="ml-1 text-lg font-normal text-foreground-subtle">
