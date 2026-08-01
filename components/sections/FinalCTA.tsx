@@ -11,7 +11,7 @@ export function FinalCTA() {
         alt=""
         fill
         sizes="100vw"
-        className="min-h-full min-w-full scale-105 object-cover object-center"
+        className="object-cover object-[32%_center] sm:scale-105 sm:object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/45 to-background/60" />
       <FadeIn className="w-full">

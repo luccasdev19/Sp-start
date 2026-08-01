@@ -6,16 +6,16 @@ import { StatCounter } from "@/components/shared/StatCounter";
 export function Hero() {
   return (
     <section className="relative flex min-h-[90svh] flex-col overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-x-0 top-0 z-0 h-[90svh] sm:inset-0 sm:h-auto">
         <Image
           src="/hero-noc.jpg"
           alt="Equipe SP START em sala de monitoramento de TI"
           fill
           priority
           sizes="100vw"
-          className="min-h-full min-w-full scale-105 object-cover object-center"
+          className="object-cover object-center sm:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-petrol/50 via-background/35 to-background/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-petrol/50 via-background/35 to-background sm:to-background/55" />
       </div>
       <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 py-16 text-center sm:py-20">
         <h1 className="text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">
