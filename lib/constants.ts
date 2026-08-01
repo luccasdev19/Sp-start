@@ -16,17 +16,17 @@ export const services: Service[] = [
   {
     id: "consultoria",
     title: "Consultoria de TI",
-    description: "Diagnóstico, migração para a nuvem, segurança e otimização de custos.",
+    description: "Estratégia de TI para reduzir riscos, otimizar custos e preparar sua empresa para crescer.",
     longDescription:
-      "Transformamos desafios de tecnologia em decisões claras, com uma leitura completa do seu ambiente e um plano de evolução alinhado ao ritmo do seu negócio.",
+      "Analisamos o cenário atual da sua TI, identificamos riscos e oportunidades e definimos um plano de ação alinhado às prioridades do seu negócio.",
     content: [
-      "Toda decisão de TI tem impacto direto na continuidade e no crescimento da operação. Por isso, começamos entendendo o ambiente atual, os processos críticos e os objetivos que orientam o negócio.",
-      "A partir desse diagnóstico, traduzimos necessidades técnicas em prioridades práticas. O resultado é um plano de ação claro, que reduz riscos, organiza investimentos e oferece segurança para cada próximo passo.",
+      "Antes de investir em novas soluções, é essencial entender o que realmente precisa mudar. Nossa consultoria avalia a infraestrutura, os processos, a segurança e os custos do ambiente para construir uma visão clara da situação atual.",
+      "Com base nessa análise, organizamos as prioridades e recomendamos os próximos passos de forma prática. Sua empresa recebe um direcionamento seguro para reduzir riscos, evitar investimentos desnecessários e preparar a tecnologia para acompanhar o crescimento do negócio.",
     ],
     benefits: [
-      "Diagnóstico completo da infraestrutura",
-      "Planejamento seguro para nuvem e segurança",
-      "Otimização de investimentos em tecnologia",
+      "Mapeamento do ambiente e dos principais riscos",
+      "Plano de ação claro e organizado por prioridades",
+      "Otimização de licenças e condições diferenciadas em soluções Microsoft",
     ],
     href: "/servicos/consultoria",
     image: "/consultoria.jpg",
@@ -35,17 +35,17 @@ export const services: Service[] = [
   {
     id: "projetos",
     title: "Projetos",
-    description: "Redes, migração de dados e estruturação completa do parque de TI.",
+    description: "Projetos de TI planejados para modernizar sua infraestrutura com segurança e continuidade.",
     longDescription:
-      "Planejamos e executamos cada etapa com método, comunicação e precisão para modernizar sua operação sem criar interrupções desnecessárias.",
+      "Planejamos e executamos projetos de infraestrutura, redes e migração de dados com segurança, organização e o menor impacto possível na rotina da sua empresa.",
     content: [
-      "Projetos de infraestrutura exigem muito mais do que tecnologia: exigem planejamento, controle de impactos e uma execução que respeite a rotina de quem depende do ambiente todos os dias.",
-      "Nossa equipe conduz cada etapa com transparência, da definição do escopo à validação final. Assim, sua empresa ganha um ambiente mais preparado, sem perder visibilidade sobre o que está acontecendo.",
+      "Mudanças na infraestrutura de TI exigem planejamento cuidadoso para evitar indisponibilidade, perda de dados e custos inesperados. Por isso, cada projeto começa com o levantamento do ambiente, a definição do escopo e a identificação dos possíveis impactos na operação.",
+      "Nossa equipe acompanha todas as etapas, da preparação à implantação e validação final. Com uma execução organizada e comunicação transparente, sua empresa recebe uma infraestrutura moderna, documentada e pronta para atender às necessidades atuais e futuras.",
     ],
     benefits: [
-      "Implantação de redes e infraestrutura",
-      "Migração de dados e e-mails com segurança",
-      "Ambientes prontos para crescer com performance",
+      "Escopo, cronograma e custos definidos com clareza",
+      "Implantação e migração com segurança e mínimo impacto",
+      "Infraestrutura documentada e preparada para crescer",
     ],
     href: "/servicos/projetos",
     image: "/projetos.jpg",
@@ -54,17 +54,17 @@ export const services: Service[] = [
   {
     id: "gestao",
     title: "Gestão de TI",
-    description: "Mais controle, menos problemas e melhores resultados.",
+    description: "Gestão especializada de TI para prevenir falhas, organizar prioridades e manter sua operação estável.",
     longDescription:
-      "Assumimos a visão contínua da sua TI para antecipar riscos, organizar prioridades e manter sua infraestrutura trabalhando a favor da empresa.",
+      "Acompanhamos continuamente sua TI e transformamos informações técnicas em ações que oferecem mais controle, previsibilidade e segurança para o negócio.",
     content: [
-      "Uma operação estável não depende apenas de resolver incidentes. Ela precisa de acompanhamento constante, critérios bem definidos e uma visão que conecte o dia a dia aos objetivos da empresa.",
-      "Com a gestão de TI da SP START, sua infraestrutura passa a ser acompanhada de forma ativa. Você tem mais clareza sobre prioridades, menos surpresas e apoio especializado para tomar decisões melhores.",
+      "Cuidar da TI apenas quando um problema acontece gera interrupções, custos inesperados e falhas recorrentes. Uma gestão eficiente exige visão do ambiente, acompanhamento das demandas e planejamento para que a tecnologia evolua junto com a empresa.",
+      "Com a gestão de TI da SP START, sua empresa conta com acompanhamento especializado para analisar o desempenho da infraestrutura, definir prioridades e orientar melhorias. Assim, as decisões deixam de ser reativas e passam a fazer parte de uma estratégia contínua.",
     ],
     benefits: [
-      "Monitoramento proativo do ambiente",
-      "Indicadores claros para decisões melhores",
-      "Prevenção de falhas e redução de riscos",
+      "Visibilidade contínua sobre o ambiente e as demandas",
+      "Prevenção de falhas recorrentes e riscos operacionais",
+      "Planejamento de melhorias e investimentos em TI",
     ],
     href: "/servicos/gestao",
     image: "/gestao-de-ti.jpg",
@@ -73,17 +73,17 @@ export const services: Service[] = [
   {
     id: "suporte",
     title: "Suporte Técnico",
-    description: "Atendimento via WhatsApp, remoto ou presencial, com SLA definido.",
+    description: "Suporte remoto e presencial com agilidade, organização e SLA definido.",
     longDescription:
-      "Quando sua operação precisa seguir em frente, nosso time atua com agilidade, proximidade e processos claros para resolver o que importa.",
+      "Atendemos as demandas da sua equipe com rapidez e processos bem definidos, reduzindo o impacto dos problemas de TI na rotina da empresa.",
     content: [
-      "Quando ocorre uma falha, cada minuto importa. Nosso suporte combina canais acessíveis, processos organizados e profissionais preparados para entender o impacto antes de propor a solução.",
-      "Mais do que encerrar chamados, trabalhamos para que os problemas não se repitam. O acompanhamento contínuo oferece previsibilidade à sua equipe e mantém a tecnologia disponível para o trabalho seguir.",
+      "Quando uma falha impede o trabalho, é importante contar com um suporte fácil de acionar e preparado para entender a urgência de cada situação. Nossa equipe recebe e organiza as solicitações para que os chamados sejam atendidos de acordo com o impacto e o SLA estabelecido.",
+      "O atendimento pode ser realizado via WhatsApp, acesso remoto ou presencialmente, conforme a necessidade. Durante todo o processo, sua equipe recebe informações claras sobre o andamento do chamado até que a solução seja concluída.",
     ],
     benefits: [
-      "Atendimento remoto e presencial",
-      "SLA definido e comunicação transparente",
-      "Monitoramento contínuo e resposta rápida",
+      "Atendimento via WhatsApp, remoto e presencial",
+      "Chamados priorizados de acordo com o impacto e o SLA",
+      "Comunicação clara do início à conclusão",
     ],
     href: "/servicos/suporte",
     image: "/suporte.jpg",
