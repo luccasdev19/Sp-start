@@ -7,7 +7,7 @@ import { services } from "@/lib/constants";
 
 export function ServicesPreview() {
   return (
-    <section id="servicos" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="servicos" className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
       <FadeIn>
         <SectionHeading
           eyebrow="Serviços"

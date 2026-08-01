@@ -13,15 +13,15 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-[65%_center] sm:object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-petrol/70 via-background/55 to-background/85" />
       </div>
-      <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 py-24 text-center">
-        <h1 className="text-4xl font-medium leading-tight text-foreground sm:text-6xl">
+      <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 py-16 text-center sm:py-20">
+        <h1 className="text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">
           Gestão de TI inteligente para empresas que não podem parar.
         </h1>
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted">
+        <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
           Monitoramento contínuo, suporte humanizado e infraestrutura que acompanha o crescimento do seu negócio.
         </p>
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">

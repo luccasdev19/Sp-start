@@ -4,7 +4,7 @@ import { FadeIn } from "@/components/shared/FadeIn";
 
 export function AboutSection() {
   return (
-    <section id="quem-somos" className="relative overflow-hidden px-6 py-24">
+    <section id="quem-somos" className="relative overflow-hidden px-6 py-16 sm:py-20">
       <div className="absolute inset-0">
         <Image
           src="/about-bg.jpg"

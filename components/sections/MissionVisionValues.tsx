@@ -23,7 +23,7 @@ const items = [
 
 export function MissionVisionValues() {
   return (
-    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_30%_20%,_#141a1f_0%,_#090c0f_70%)] px-6 py-24">
+    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_30%_20%,_#141a1f_0%,_#090c0f_70%)] px-6 py-16 sm:py-20">
       <AccentBeam flip />
       <div className="relative z-10 mx-auto max-w-6xl">
         <FadeIn>
@@ -36,7 +36,7 @@ export function MissionVisionValues() {
           {items.map((item, index) => (
             <FadeIn key={item.title} delay={index * 0.1} className="h-full">
               <div className="group relative flex h-full scale-100 flex-col overflow-hidden rounded-card border border-border bg-surface-1 shadow-none transition-all duration-500 ease-out hover:z-10 hover:-translate-y-2 hover:scale-110 hover:border-accent/60 hover:shadow-2xl hover:shadow-accent/20">
-                <div className="relative h-56 w-full overflow-hidden">
+                <div className="relative h-40 w-full overflow-hidden sm:h-48">
                   <Image
                     src={item.image}
                     alt={item.title}
