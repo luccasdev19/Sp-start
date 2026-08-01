@@ -6,7 +6,7 @@ export function PartnershipsSection() {
   const loop = [...partners, ...partners];
 
   return (
-    <section id="parcerias" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="parcerias" className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
       <FadeIn>
         <SectionHeading
           eyebrow="Parcerias"

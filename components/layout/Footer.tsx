@@ -32,8 +32,8 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border bg-surface-1">
-      <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
+      <div className="mx-auto max-w-6xl px-6 py-12">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div>
             <Image
               src="/spstart-logo.png"
@@ -81,7 +81,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border pt-6">
+        <div className="mt-8 border-t border-border pt-5">
           <p className="text-sm text-foreground-subtle">
             © {year} SP START Soluções em TI. Todos os direitos reservados.
           </p>

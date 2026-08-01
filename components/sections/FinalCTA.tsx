@@ -5,16 +5,22 @@ import { FadeIn } from "@/components/shared/FadeIn";
 
 export function FinalCTA() {
   return (
-    <section id="contato" className="relative flex min-h-[720px] items-center overflow-hidden px-6 py-24">
-      <Image src="/cta-bg.jpg" alt="" fill className="object-cover object-center" />
-      <div className="absolute inset-0 bg-background/80" />
+    <section id="contato" className="relative flex min-h-[560px] items-center overflow-hidden px-6 py-16 sm:min-h-[600px] sm:py-20">
+      <Image
+        src="/cta-bg.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover object-[65%_center] sm:object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/70 to-background/85" />
       <FadeIn className="w-full">
         <div className="relative z-10 mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-medium text-foreground sm:text-4xl">
             Fale com um especialista.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground-muted">
-            Sua empresa merece uma infraestrutura de TI estável, segura e pronta para crescer. Converse com a SP START e descubra como eliminar gargalos e ganhar mais previsibilidade operacional.
+            Tire suas dúvidas e descubra a solução ideal para a infraestrutura da sua empresa.
           </p>
           <div className="mt-10 flex justify-center">
             <WhatsAppButton message={whatsappMessages.geral} />
@@ -24,5 +30,3 @@ export function FinalCTA() {
     </section>
   );
 }
-
-
