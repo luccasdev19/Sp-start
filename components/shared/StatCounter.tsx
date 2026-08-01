@@ -20,10 +20,15 @@ export function StatCounter({
     setIsMobile(window.matchMedia("(max-width: 639px)").matches);
   }, []);
 
-  const shouldStart = isMobile === true || (isMobile === false && isInView);
-
   useEffect(() => {
-    if (!shouldStart) return;
+    if (isMobile === null) return;
+
+    if (isMobile) {
+      setDisplay(value);
+      return;
+    }
+
+    if (!isInView) return;
 
     const start = performance.now();
     const durationMs = duration * 1000;
@@ -39,7 +44,7 @@ export function StatCounter({
 
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [shouldStart, value, duration]);
+  }, [isMobile, isInView, value, duration]);
 
   return (
     <span ref={ref}>
