@@ -5,7 +5,7 @@ import { StatCounter } from "@/components/shared/StatCounter";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[90svh] flex-col overflow-hidden">
+    <section className="relative flex min-h-[60vh] sm:min-h-[90svh] flex-col overflow-hidden">
       <div className="pointer-events-none absolute inset-0 z-0">
         <Image
           src="/hero-noc.jpg"
@@ -14,7 +14,7 @@ export function Hero() {
           priority
           draggable={false}
           sizes="100vw"
-          className="select-none object-cover object-center sm:scale-105"
+          className="select-none object-cover object-center sm:scale-105 sm:object-[65%_center]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-petrol/50 via-background/35 to-background/55" />
       </div>
