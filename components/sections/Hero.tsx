@@ -12,9 +12,10 @@ export function Hero() {
           alt="Equipe SP START em sala de monitoramento de TI"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-petrol/60 via-background/80 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-petrol/70 via-background/55 to-background/85" />
       </div>
       <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 py-24 text-center">
         <h1 className="text-4xl font-medium leading-tight text-foreground sm:text-6xl">
