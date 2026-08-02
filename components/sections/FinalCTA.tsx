@@ -5,7 +5,7 @@ import { FadeIn } from "@/components/shared/FadeIn";
 
 export function FinalCTA() {
   return (
-    <section id="contato" className="relative flex min-h-[320px] items-center overflow-hidden px-6 py-12 sm:min-h-[560px] sm:py-16">
+    <section id="contato" className="relative flex min-h-[280px] items-center overflow-hidden px-6 py-8 sm:min-h-[560px] sm:py-16">
       <Image
         src="/cta-bg.jpg"
         alt=""
@@ -22,7 +22,7 @@ export function FinalCTA() {
           <p className="mt-4 text-base leading-relaxed text-foreground-muted">
             Tire suas dúvidas e descubra a solução ideal para a infraestrutura da sua empresa.
           </p>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-6 flex justify-center sm:mt-10">
             <WhatsAppButton message={whatsappMessages.geral} />
           </div>
         </div>
