@@ -43,7 +43,7 @@ export function Footer() {
               className="h-12 w-auto"
             />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-foreground-subtle">
-              Infraestrutura de TI estável, segura e preparada para o crescimento do seunegócio.
+              Infraestrutura de TI estável, segura e preparada para o crescimento do seu negócio.
             </p>
           </div>
 
