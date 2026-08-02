@@ -5,13 +5,13 @@ import { FadeIn } from "@/components/shared/FadeIn";
 
 export function FinalCTA() {
   return (
-    <section id="contato" className="relative flex min-h-[320px] sm:min-h-[560px] items-center overflow-hidden px-6 py-12 sm:py-16">
+    <section id="contato" className="relative flex min-h-[560px] items-center overflow-hidden px-6 py-16">
       <Image
         src="/cta-bg.jpg"
         alt=""
         fill
         sizes="100vw"
-        className="object-cover object-[50%_center] sm:object-[32%_center] sm:scale-105"
+        className="object-cover object-[32%_center] sm:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/45 to-background/60" />
       <FadeIn className="w-full">
