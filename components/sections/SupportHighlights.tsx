@@ -23,7 +23,7 @@ export function SupportHighlights() {
           {highlights.map((item, index) => (
             <FadeIn key={item.id} delay={index * 0.08} className="h-full">
               <div className="flex h-full flex-col overflow-hidden rounded-card border border-border bg-surface-1">
-                <div className="relative aspect-video w-full">
+                <div className="relative aspect-[3/2] w-full">
                   <Image
                     src={item.image}
                     alt={item.title}
