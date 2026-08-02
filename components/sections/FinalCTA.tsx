@@ -5,7 +5,7 @@ import { FadeIn } from "@/components/shared/FadeIn";
 
 export function FinalCTA() {
   return (
-    <section id="contato" className="relative flex min-h-[560px] items-center overflow-hidden px-6 py-16">
+    <section id="contato" className="relative flex min-h-[320px] items-center overflow-hidden px-6 py-12 sm:min-h-[560px] sm:py-16">
       <Image
         src="/cta-bg.jpg"
         alt=""
