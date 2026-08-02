@@ -1,75 +1,80 @@
-# SP START Soluções em TI
+# SP Start Website
 
-Site institucional da SP START, desenvolvido com Next.js, TypeScript e Tailwind CSS. O projeto possui uma landing page completa com página de serviços. 
+Site institucional da SP Start, desenvolvido com Next.js, TypeScript e Tailwind CSS. O projeto reúne uma landing page completa, páginas de serviços, blog em MDX e componentes reutilizáveis para apresentação da marca e conversão de leads.
+
+## Visão geral
+
+Este projeto foi criado para representar a SP Start como uma empresa especializada em soluções em TI, com foco em:
+
+- apresentação institucional e identidade visual;
+- páginas detalhadas de serviços;
+- navegação simples para contato via WhatsApp;
+- conteúdo editorial com blog em MDX;
+- estrutura responsiva e pronta para crescimento.
 
 ## Tecnologias
 
 - Next.js 16
-- React 18
+- React 19
 - TypeScript
 - Tailwind CSS
-- MDX para o blog
-- Framer Motion para pequenas animações
+- MDX para blog
+- Framer Motion para animações sutis
 - Lucide React e React Icons
 
-## Funcionalidades atuais
+## Funcionalidades principais
 
-- Landing page com seção de hero, estatísticas, sobre, missão/visão/valores, serviços, atendimento, parcerias e CTA final
-- Página `/servicos` com acesso às quatro soluções principais
-- Páginas individuais para Consultoria, Projetos, Gestão de TI e Suporte Técnico
-- Conteúdo dos serviços centralizado em `lib/constants.ts`, reutilizado na home, na listagem e nas páginas detalhadas
-- Timeline de leitura integrada às páginas de serviço, com animações discretas de progresso, conclusão e acessibilidade
-- Botão de WhatsApp reutilizável com mensagens específicas por contexto
-- Estrutura responsiva e visual institucional
-
-## Serviços e jornada de leitura
-
-Cada serviço possui uma rota própria:
-
-- `/servicos/consultoria`
-- `/servicos/projetos`
-- `/servicos/gestao`
-- `/servicos/suporte`
-
-As páginas detalhadas usam o componente `ServiceReadingTimeline`. A timeline é um elemento inline, posicionado antes do CTA, e representa somente a leitura da página atual. Sua jornada é unidirecional:
-
-1. `hidden`: permanece invisível até entrar na área de leitura.
-2. `entering`: aparece com fade e deslocamento vertical suave.
-3. `tracking`: preenche linha e anéis conforme o usuário percorre o trecho local da timeline.
-4. `completed`: conclui o ícone final com um glow sutil e permanece estática antes do botão de contato.
-
-Essa arquitetura usa Framer Motion (`useInView` e `useScroll`) para evitar reposicionamentos de layout, listeners manuais de scroll e a aparência de widget flutuante.
+- Landing page com hero, sobre, missão/visão/valores, serviços, parcerias e CTA final;
+- página de serviços com acesso às principais soluções;
+- páginas individuais para Consultoria, Projetos, Gestão de TI e Suporte Técnico;
+- conteúdo compartilhado para home, listagem e páginas detalhadas;
+- timeline de leitura nas páginas de serviço;
+- botão de WhatsApp com mensagens contextualizadas;
+- estrutura responsiva para desktop e mobile.
 
 ## Requisitos
 
-- Node.js 18+ recomendado
-- npm ou pnpm
+- Node.js 18+ (recomendado 20+)
+- npm
 
-## Como rodar localmente
+## Instalação
 
-1. Instale as dependências:
+1. Clone o repositório:
+
+```bash
+git clone <url-do-repositorio>
+cd spstart-website
+```
+
+2. Instale as dependências:
 
 ```bash
 npm install
 ```
 
-2. Crie um arquivo `.env.local` na raiz do projeto com a variável abaixo:
+3. Crie um arquivo .env.local na raiz com as variáveis necessárias:
 
 ```env
 NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
 ```
 
-> O valor deve estar no formato internacional, sem espaços.
+> O valor deve seguir o formato internacional, sem espaços e sem caracteres especiais.
 
-3. Inicie o servidor de desenvolvimento:
+## Execução local
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
 ```
 
-Acesse: http://localhost:3000
+Acesse no navegador:
 
-## Scripts
+```text
+http://localhost:3000
+```
+
+## Scripts disponíveis
 
 ```bash
 npm run dev
@@ -78,14 +83,20 @@ npm run start
 npm run lint
 ```
 
-## Estrutura principal
+## Estrutura do projeto
 
 ```text
-app/                # Rotas e páginas do Next.js
-components/         # Componentes reutilizáveis do site
-lib/                # Constantes, utilidades e integração do WhatsApp
-public/             # Imagens e assets estáticos
+app/              # rotas e páginas do Next.js
+components/       # componentes reutilizáveis do site
+content/          # conteúdo do blog em MDX
+lib/              # constantes, utilidades e integrações
+public/           # imagens e arquivos estáticos
 ```
+
+## Implantação
+
+O projeto pode ser publicado em plataformas como Vercel, que possuem excelente compatibilidade com Next.js.
+
 ## Observações
 
-O projeto pode receber melhorias contínuas de conteúdo, SEO e conversão.
+Este repositório está em evolução e pode receber melhorias futuras em conteúdo, SEO, performance e conversão.
