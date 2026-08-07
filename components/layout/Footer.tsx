@@ -11,8 +11,8 @@ const navItems = [
 
 const contactItems = [
   {
-    label: "comercial@spstart.com",
-    href: "mailto:comercial@spstart.com",
+    label: "comercial@spstart.com.br",
+    href: "mailto:comercial@spstart.com.br",
     icon: Mail,
   },
   {

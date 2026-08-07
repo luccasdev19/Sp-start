@@ -7,17 +7,17 @@ const items = [
   {
     title: "Missão",
     description: "Fornecer soluções completas em tecnologia da informação que garantam segurança, eficiência e continuidade operacional, permitindo que nossos clientes foquem no crescimento de seus negócios com tranquilidade e alta performance.",
-    image: "/mission.jpg",
+    image: "/mission_claro.png",
   },
   {
     title: "Visão",
     description: "Ser reconhecida como uma empresa de referência em serviços de TI, destacando-se pela excelência no atendimento, inovação constante e geração de valor estratégico, tornando-se parceira essencial na evolução tecnológica dos nossos clientes.",
-    image: "/vision.jpg",
+    image: "/vision_claro.png",
   },
   {
     title: "Valores",
     description: "Comprometimento com o cliente, excelência na execução, segurança da informação, inovação constante, ética nas relações e proatividade para antecipar e resolver desafios.",
-    image: "/values.jpg",
+    image: "/values_claro.png",
   },
 ];
 
