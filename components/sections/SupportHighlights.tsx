@@ -15,7 +15,7 @@ export function SupportHighlights() {
         <FadeIn>
           <SectionHeading
             eyebrow="Atendimento"
-            title="Um atendimento diferenciado, do primeiro contato ao suporte contínuo."
+            title="Uma experiência de atendimento construída sobre proximidade, confiança e excelência."
             description="Atendimento ágil, humanizado e focado em manter sua operação em movimento."
           />
         </FadeIn>

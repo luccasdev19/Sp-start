@@ -33,13 +33,31 @@ export function ServiceDetail({ service }: { service: Service }) {
           <div className="mt-12 border-y border-border py-8">
             <h2 className="text-lg font-medium text-foreground">O que sua empresa ganha</h2>
             <ul className="mt-6 space-y-4" aria-label={`Benefícios de ${service.title}`}>
-              {service.benefits.map((benefit) => (
-                <li key={benefit} className="flex gap-3 text-sm leading-relaxed text-foreground-muted">
-                  <Check size={18} className="mt-0.5 shrink-0 text-accent" aria-hidden="true" />
-                  {benefit}
-                </li>
-              ))}
+              {service.benefits.map((benefit) => {
+                const [title, description] = benefit.split("\n", 2);
+
+                return (
+                  <li key={benefit} className="flex gap-3 text-sm leading-relaxed text-foreground-muted">
+                    <Check size={18} className="mt-0.5 shrink-0 text-accent" aria-hidden="true" />
+                    {description ? (
+                      <span>
+                        <strong className="font-semibold text-foreground">{title}</strong>
+                        <span className="mt-1 block">{description}</span>
+                      </span>
+                    ) : (
+                      benefit
+                    )}
+                  </li>
+                );
+              })}
             </ul>
+            {service.benefitsHighlight && (
+              <div className="mt-8 border-t border-border pt-6">
+                <p className="text-sm font-semibold leading-relaxed text-foreground">
+                  {service.benefitsHighlight}
+                </p>
+              </div>
+            )}
           </div>
         </FadeIn>
 
