@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Instagram, MessageCircle } from "lucide-react";
+import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 const navItems = [
   { label: "Quem somos", href: "/#quem-somos" },
@@ -9,26 +10,25 @@ const navItems = [
   { label: "Parcerias", href: "/#parcerias" },
 ];
 
-const contactItems = [
-  {
-    label: "comercial@spstart.com.br",
-    href: "mailto:comercial@spstart.com.br",
-    icon: Mail,
-  },
-  {
-    label: "WhatsApp",
-    href: "https://wa.me/5511992685241",
-    icon: MessageCircle,
-  },
-  {
-    label: "@spstart.tec",
-    href: "https://www.instagram.com/spstart.tec/",
-    icon: Instagram,
-  },
-];
-
 export function Footer() {
   const year = new Date().getFullYear();
+  const contactItems = [
+    {
+      label: "comercial@spstart.com.br",
+      href: "mailto:comercial@spstart.com.br",
+      icon: Mail,
+    },
+    {
+      label: "WhatsApp",
+      href: buildWhatsAppLink(),
+      icon: MessageCircle,
+    },
+    {
+      label: "@spstart.tec",
+      href: "https://www.instagram.com/spstart.tec/",
+      icon: Instagram,
+    },
+  ];
 
   return (
     <footer className="border-t border-border bg-surface-1">
