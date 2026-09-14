@@ -42,7 +42,7 @@ O `next.config.mjs` adiciona cabeçalhos de segurança em todas as rotas, inclui
 6. `PartnershipsSection`: faixa animada com os parceiros;
 7. `FinalCTA`: chamada final para contato via WhatsApp.
 
-O Hero usa atualmente `public/ChatGPT Image 14 de set. de 2026, 18_03_21.png`. As fotos de conteúdo recebem a classe `brand-photo`, definida em `app/globals.css`, que aplica uma correção visual leve para aproximar os assets da identidade petrol e dourada da marca.
+O Hero usa atualmente `public/hero-monitoramento.png`. As fotos de conteúdo recebem a classe `brand-photo`, definida em `app/globals.css`, que aplica uma correção visual leve para aproximar os assets da identidade petrol e dourada da marca.
 
 ### Serviços
 

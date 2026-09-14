@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative flex min-h-[90svh] flex-col overflow-hidden">
       <div className="pointer-events-none absolute inset-0 z-0">
         <Image
-          src="/ChatGPT Image 14 de set. de 2026, 18_03_21.png"
+          src="/hero-monitoramento.png"
           alt="Equipe SP START em sala de monitoramento de TI"
           fill
           priority
