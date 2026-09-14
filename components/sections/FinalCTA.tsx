@@ -7,12 +7,18 @@ export function FinalCTA() {
   return (
     <section id="contato" className="relative flex min-h-[50svh] items-center overflow-hidden px-6 py-8 sm:min-h-[60svh] sm:py-16 lg:min-h-[75svh]">
       <Image
+        src="/cta-bg-mobile.png"
+        alt=""
+        fill
+        sizes="100vw"
+        className="brand-photo absolute inset-0 h-full w-full object-cover sm:hidden"
+      />
+      <Image
         src="/cta-bg.jpg"
         alt=""
         fill
-        priority
         sizes="100vw"
-        className="brand-photo absolute inset-0 h-full w-full object-cover object-center"
+        className="brand-photo absolute inset-0 hidden h-full w-full object-cover object-[70%_center] sm:block sm:object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/45 to-background/60" />
       <FadeIn className="w-full">

@@ -8,13 +8,22 @@ export function Hero() {
     <section className="relative flex min-h-[90svh] flex-col overflow-hidden">
       <div className="pointer-events-none absolute inset-0 z-0">
         <Image
+          src="/hero-monitoramento-mobile.png"
+          alt="Equipe SP START em sala de monitoramento de TI"
+          fill
+          priority
+          draggable={false}
+          sizes="100vw"
+          className="brand-photo select-none object-cover sm:hidden"
+        />
+        <Image
           src="/hero-monitoramento.png"
           alt="Equipe SP START em sala de monitoramento de TI"
           fill
           priority
           draggable={false}
           sizes="100vw"
-          className="brand-photo select-none object-cover object-center sm:scale-105"
+          className="brand-photo hidden select-none object-cover object-[65%_top] sm:block sm:object-center sm:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-petrol/50 via-background/35 to-background/55" />
       </div>
@@ -34,22 +43,22 @@ export function Hero() {
             Conheça nossos serviços
           </a>
         </div>
-        <div className="mt-10 grid w-full grid-cols-1 gap-4 sm:mt-16 sm:grid-cols-3">
+        <div className="mt-10 grid w-full min-w-0 grid-cols-3 gap-2 sm:mt-16 sm:gap-4">
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="flex items-center gap-4 rounded-card border border-border bg-surface-1/90 px-5 py-4 sm:aspect-square sm:flex-col sm:justify-center sm:gap-3 sm:bg-surface-1/70 sm:p-6 sm:backdrop-blur-sm"
+              className="flex min-h-36 min-w-0 flex-col items-center justify-center gap-1 rounded-card border border-border bg-surface-1/90 px-1.5 py-4 sm:aspect-square sm:gap-3 sm:bg-surface-1/70 sm:p-6 sm:backdrop-blur-sm"
             >
-              <stat.icon size={24} className="text-accent" aria-hidden="true" />
-              <span className="w-20 shrink-0 text-center text-2xl font-medium tabular-nums text-foreground sm:w-auto sm:shrink sm:text-3xl sm:proportional-nums">
+              <stat.icon size={24} className="size-5 text-accent sm:size-6" aria-hidden="true" />
+              <span className="w-full text-center text-lg font-medium tabular-nums text-foreground sm:text-3xl sm:proportional-nums">
                 <StatCounter value={stat.value} prefix={stat.prefix} />
                 {stat.suffix && (
-                  <span className="ml-1 text-lg font-normal text-foreground-subtle">
+                  <span className="ml-0.5 text-sm font-normal text-foreground-subtle sm:ml-1 sm:text-lg">
                     {stat.suffix}
                   </span>
                 )}
               </span>
-              <span className="text-left text-sm text-foreground-subtle sm:text-center">
+              <span className="max-w-full text-center text-[10px] leading-snug text-foreground-subtle sm:text-sm">
                 {stat.label}
               </span>
             </div>
