@@ -2,25 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background-color: #0d1216;
+  background-color: #10161b;
   color: #ffffff;
 }
 @layer base {
   :root {
-    --background: #0d1216;
+    --background: #10161b;
     --foreground: #ffffff;
     --card: #151b20;
     --card-foreground: #ffffff;
     --popover: #151b20;
     --popover-foreground: #ffffff;
     --primary: #d4a24e;
-    --primary-foreground: #0d1216;
+    --primary-foreground: #10161b;
     --secondary: #151b20;
     --secondary-foreground: #ffffff;
     --muted: #212a30;
     --muted-foreground: #8fa0a8;
     --accent: #d4a24e;
-    --accent-foreground: #0d1216;
+    --accent-foreground: #10161b;
     --destructive: #dc2626;
     --destructive-foreground: #ffffff;
     --border: #2a3840;
@@ -33,5 +33,11 @@ body {
   }
   * {
     @apply border-border;
+  }
+}
+
+@layer components {
+  .brand-photo {
+    filter: saturate(0.94) contrast(1.02) sepia(0.035);
   }
 }

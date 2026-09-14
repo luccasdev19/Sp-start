@@ -8,13 +8,13 @@ export function Hero() {
     <section className="relative flex min-h-[90svh] flex-col overflow-hidden">
       <div className="pointer-events-none absolute inset-0 z-0">
         <Image
-          src="/hero-noc.jpg"
+          src="/ChatGPT Image 14 de set. de 2026, 18_03_21.png"
           alt="Equipe SP START em sala de monitoramento de TI"
           fill
           priority
           draggable={false}
           sizes="100vw"
-          className="select-none object-cover object-center sm:scale-105"
+          className="brand-photo select-none object-cover object-center sm:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-petrol/50 via-background/35 to-background/55" />
       </div>

@@ -8,7 +8,7 @@ export function SupportHighlights() {
   return (
     <section
       id="atendimento"
-      className="relative overflow-hidden bg-[radial-gradient(circle_at_70%_80%,_#171e24_0%,_#0d1216_70%)] px-6 py-16 sm:py-20"
+      className="relative overflow-hidden bg-[radial-gradient(circle_at_70%_80%,_#171e24_0%,_#10161b_70%)] px-6 py-16 sm:py-20"
     >
       <AccentBeam />
       <div className="relative z-10 mx-auto max-w-6xl">
@@ -29,7 +29,7 @@ export function SupportHighlights() {
                     alt={item.title}
                     fill
                     sizes="(max-width: 640px) 100vw, 50vw"
-                    className="object-cover"
+                    className="brand-photo object-cover"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-8 pt-6">

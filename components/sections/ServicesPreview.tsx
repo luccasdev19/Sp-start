@@ -29,7 +29,7 @@ export function ServicesPreview() {
                   alt={service.title}
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="brand-photo object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="flex flex-1 flex-col p-8 pt-6">

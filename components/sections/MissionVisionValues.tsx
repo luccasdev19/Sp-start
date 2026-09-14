@@ -42,7 +42,7 @@ export function MissionVisionValues() {
                     alt={item.title}
                     fill
                     sizes="(max-width: 640px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-125"
+                    className="brand-photo object-cover transition-transform duration-500 ease-out group-hover:scale-125"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-8 pt-6">

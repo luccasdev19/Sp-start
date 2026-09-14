@@ -24,6 +24,4 @@ export function buildWhatsAppLink(message: string = DEFAULT_MESSAGE): string {
 // Mensagens pre-definidas por contexto, para reuso nos componentes.
 export const whatsappMessages = {
   geral: DEFAULT_MESSAGE,
-  monitoramento:
-    "Olá, quero saber mais sobre o serviço de monitoramento 24/7 da SP START.",
 } as const;

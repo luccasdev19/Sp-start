@@ -114,7 +114,7 @@ export const services: Service[] = [
   },
 ];
 
-export interface Highlight {
+interface Highlight {
   id: string;
   title: string;
   description: string;
@@ -152,7 +152,7 @@ export const highlights: Highlight[] = [
   },
 ];
 
-export interface Stat {
+interface Stat {
   id: string;
   value: number;
   prefix?: string;
@@ -167,7 +167,7 @@ export const stats: Stat[] = [
   { id: "monitoramento", value: 24, suffix: "/7", label: "Monitoramento", icon: ShieldCheck },
 ];
 
-export interface Partner {
+interface Partner {
   id: string;
   name: string;
   logo: string;

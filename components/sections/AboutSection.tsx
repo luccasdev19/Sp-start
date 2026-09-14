@@ -11,7 +11,7 @@ export function AboutSection() {
           alt=""
           fill
           sizes="100vw"
-          className="scale-110 object-cover object-center opacity-25 blur-2xl"
+          className="brand-photo scale-110 object-cover object-center opacity-25 blur-2xl"
         />
         <div className="absolute inset-0 bg-background/70" />
       </div>
@@ -35,7 +35,7 @@ export function AboutSection() {
               alt="Equipe da SP START analisando infraestrutura de TI"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
+              className="brand-photo object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
           </div>
