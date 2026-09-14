@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { FadeIn } from "@/components/shared/FadeIn";
 import { partners } from "@/lib/constants";
@@ -26,9 +27,11 @@ export function PartnershipsSection() {
                 key={`${partner.id}-${index}`}
                 className="flex h-16 w-32 shrink-0 items-center justify-center rounded-card bg-surface-1 px-4"
               >
-                <img
+                <Image
                   src={partner.logo}
                   alt={partner.name}
+                  width={128}
+                  height={32}
                   className="max-h-8 w-auto object-contain"
                 />
               </div>

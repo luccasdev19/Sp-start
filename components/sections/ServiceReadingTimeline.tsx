@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Building2, House } from "lucide-react";
 import {
   motion,
@@ -53,13 +53,13 @@ export function ServiceReadingTimeline() {
   const middleProgress = useTransform(journeyProgress, [0.5, 0.85], [0, 1]);
   const lastProgress = useTransform(journeyProgress, [0.85, 1], [0, 1]);
 
-  const transitionTo = (nextState: TimelineState) => {
+  const transitionTo = useCallback((nextState: TimelineState) => {
     if (timelineStateRef.current === "completed" || timelineStateRef.current === nextState) return;
     timelineStateRef.current = nextState;
     setTimelineState(nextState);
-  };
+  }, []);
 
-  const updateJourney = (value: number) => {
+  const updateJourney = useCallback((value: number) => {
     if (timelineStateRef.current !== "tracking") return;
 
     const nextProgress = Math.max(highestProgressRef.current, value);
@@ -76,7 +76,7 @@ export function ServiceReadingTimeline() {
       setPhase(2);
       transitionTo("completed");
     }
-  };
+  }, [journeyProgress, transitionTo]);
 
   useEffect(() => {
     if (!isInView || timelineStateRef.current !== "hidden") return;
@@ -88,7 +88,7 @@ export function ServiceReadingTimeline() {
     }, shouldReduceMotion ? 0 : ENTRY_DURATION);
 
     return () => window.clearTimeout(timeout);
-  }, [isInView, shouldReduceMotion]);
+  }, [isInView, scrollYProgress, shouldReduceMotion, transitionTo, updateJourney]);
 
   useMotionValueEvent(scrollYProgress, "change", updateJourney);
 

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
 import { useInView } from "framer-motion";
 interface StatCounterProps {
   value: number;
@@ -13,15 +13,17 @@ export function StatCounter({
 }: StatCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
-  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+  const isMobile = useSyncExternalStore(
+    (onStoreChange) => {
+      const mediaQuery = window.matchMedia("(max-width: 639px)");
+      mediaQuery.addEventListener("change", onStoreChange);
+      return () => mediaQuery.removeEventListener("change", onStoreChange);
+    },
+    () => window.matchMedia("(max-width: 639px)").matches,
+    () => false,
+  );
 
   useEffect(() => {
-    setIsMobile(window.matchMedia("(max-width: 639px)").matches);
-  }, []);
-
-  useEffect(() => {
-    if (isMobile === null) return;
-
     const element = ref.current;
     if (!element) return;
 
