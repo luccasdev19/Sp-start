@@ -28,7 +28,7 @@ export function AboutSection() {
             ]}
           />
         </FadeIn>
-        <FadeIn delay={0.1}>
+        <FadeIn delay={0.1} className="hidden order-1 md:block md:order-2">
           <div className="relative aspect-[3/2] w-full max-w-[420px] overflow-hidden rounded-card border border-border mx-auto md:justify-self-end md:aspect-[4/5]">
             <Image
               src="/about-team_claro.png"
